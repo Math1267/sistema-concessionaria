@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" href="cambio.css?v=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon"  href="../img/carroicone.svg">
+    <title>Cambio</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <h1>Sistema de Gerenciamento</h1>
+            <p></p>
+        </div>
+
+        <div class="right-panel">
+           <form action="cambio.php" method="post">
+            <h2>Faça o cadastro do cambio</h2>
+
+                <div class="input-group">
+                <label for="nomecambio">Nome do cambio: </label>
+                <input type="text" name="nm_cambio" id="id_cambio" maxlength="20" placeholder="Cambio" required>
+                </div>
+                 <div class="button-group">
+                <button type="submit" class="btn primary">Cadastrar cambio</button>
+                <a href="../principal/index.html" class="btn secondary">Voltar ao início</a>
+                </div>
+        </div>
+    </div>
+</body>
+</html>

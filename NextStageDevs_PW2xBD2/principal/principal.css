@@ -1,0 +1,274 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body e layout principal */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f0f0;
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 260px;
+  background: linear-gradient(180deg, #0d5793, #07365d);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  overflow-y: auto;
+}
+
+/* Sidebar conteúdo (logo, menu, usuário) */
+.logo {
+  padding: 0 20px 30px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.logo h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.logo p {
+  font-size: 14px;
+  color: #b3cfff;
+  margin-top: 4px;
+}
+
+.menu {
+  list-style: none;
+  padding: 20px;
+  flex: 1;
+}
+
+.menu li {
+  margin: 10px 0;
+}
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+.menu li a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.menu li a i {
+  width: 20px;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.section-title {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #b3cfff;
+}
+
+.user-box {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #0a3f6d;
+  margin-top: auto;
+}
+
+.user-box i {
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+.user-box strong {
+  font-size: 14px;
+  color: white;
+}
+
+.user-box span {
+  font-size: 12px;
+  color: #ccc;
+}
+
+/* Main content geral */
+.main-content {
+  flex: 1;
+  padding: 40px 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f9f9f9;
+  overflow-y: auto;
+}
+
+/* Títulos principais */
+.main-content h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.main-content p {
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+/* Cards da seção Gerenciamento (menores, verticais) */
+.card-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.card-container .card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 280px; /* largura menor */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.card-container .card i {
+  font-size: 36px;
+  color: #0d5793;
+}
+
+.card-container .card h3 {
+  font-size: 18px;
+  color: #222;
+}
+
+.card-container .card p {
+  font-size: 14px;
+  color: #555;
+}
+
+.card-container .btn {
+  margin-top: auto;
+  display: inline-block;
+  background-color: #0d5793;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.card-container .btn:hover {
+  background-color: #07365d;
+}
+
+/* Dashboard cards (retangulares maiores, 2 colunas) */
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px 30px;
+  max-width: 1000px;
+  margin: 40px auto 0;
+  width: 100%;
+}
+
+.dashboard .card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 24px 32px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.07);
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  min-width: 420px;
+}
+
+.dashboard .icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  flex-shrink: 0;
+}
+
+.icon.car {
+  background: #d6e7fb;
+  color: #2a54b8;
+}
+
+.icon.money {
+  background: #ddebd6;
+  color: #3a7d3a;
+}
+
+.icon.user {
+  background: #f6e9c3;
+  color: #a77e00;
+}
+
+.icon.stock {
+  background: #f3d8d8;
+  color: #a73b3b;
+}
+
+.content {
+  flex-grow: 1;
+}
+
+.title {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 6px;
+}
+
+.value {
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 4px;
+}
+
+.footer {
+  font-size: 13px;
+  color: #7a7a7a;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.footer .arrow {
+  font-weight: 700;
+}
+
+.footer.green {
+  color: #3a7d3a;
+}
+
+.footer.orange {
+  color: #a77e00;
+}
+
+

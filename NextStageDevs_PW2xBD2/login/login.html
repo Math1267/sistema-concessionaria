@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login de Usuário</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="icon"  href="../img/carroicone.svg">
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <h1>Sistema de Gerenciamento</h1>
+            <p>Bem-vindo! Faça o login para começar.</p>
+        </div>
+
+        <div class="right-panel">
+            <form method="POST" action="login.php">
+                <h2>Login de Usuário</h2>
+
+                <div class="input-group">
+                    <label for="id_funcionario">Código de Identificação:</label>
+                    <input type="text" name="cd_identificacao" id="id_funcionario" maxlength="11" placeholder="Identificação" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="cd_senha">Senha:</label>
+                    <input type="password" name="cd_senha" id="cd_senha" maxlength="10" placeholder="Senha" required>
+                </div>
+
+                <button type="submit" class="btn primary" id = "entrar" name = "entrar">Entrar</button>
+                
+            </form>
+        </div>
+    </div>
+</body>
+</html>

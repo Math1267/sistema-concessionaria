@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AutoGestão</title>
+  <link rel="icon"  href="../img/carroicone.svg">
+  <link rel="stylesheet" href="principal.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <div class="sidebar">
+    <div class="logo">
+      <h1>AutoGestão</h1>
+      <p>Sistema de Gerenciamento</p>
+    </div>
+
+    <ul class="menu">
+      <li class="section-title">CADASTROS</li>
+      <li><a href="../acessorio/acessorio.html"><i class="fas fa-screwdriver-wrench"></i> Acessórios</a></li>
+      <li><a href="../cambio/cambio.html"><i class="fas fa-gears"></i> Câmbio</a></li>
+      <li><a href="../combustivel/combustivel.html"><i class="fas fa-gas-pump"></i> Combustível</a></li>
+      <li><a href="../carroceria/carroceria.html"><i class="fas fa-truck"></i> Carroceria</a></li>
+      <li><a href="../cor/cor.html"><i class="fas fa-palette"></i> Cor</a></li>
+      <li><a href="../marca/marca.html"><i class="fas fa-tags"></i> Marca</a></li>
+
+      <li class="section-title">GERENCIAMENTO</li>
+      <li><a href="../modelos/modelos.php"><i class="fas fa-car-side"></i> Modelos</a></li>
+      <li><a href="../carroacessorio/carroacessorio.php"><i class="fas fa-plus"></i> Acess. no Carro</a></li>
+      <li><a href="../deletar/deletar.php"><i class="fas fa-trash-alt"></i> Deletar Carro</a></li>
+      <li><a href="../login/login.html"><i class="fas fa-user-circle"></i> Trocar usuário</a></li>
+
+      <li><a href="../listar/listar.php"><i class="fas fa-car-side"></i> Listar Carros</a></li>
+      <li><a href="../listarmarcamodelo/listarmarcamodelo.php"><i class="fas fa-car-side"></i> Listar Marca Modelo</a></li>
+      <li><a href="../listacarrochassi/listacarrochassi.php"><i class="fas fa-car-side"></i> Listar Chassi do Carro</a></li>
+      <li><a href="../listacarroacessorio/listacarroacessorio.php"><i class="fas fa-car-side"></i> Listar Carro com Acessórios</a></li>
+      
+
+    </ul>
+
+    <div class="user-box">
+      <i class="fas fa-user-circle"></i>
+      <div>
+        <strong>Admin</strong><br />
+        <span>Administrador</span>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="main-content">
+    <h2>Sistema de Gerenciamento de Carros</h2>
+    <p>Selecione uma opção abaixo:</p>
+
+    <!-- Seção Gerenciamento com cards menores -->
+    <div class="card-container">
+      <div class="card">
+        <i class="fas fa-car"></i>
+        <h3>Gerenciamento de Veículos</h3>
+        <p>Cadastre, edite e gerencie todos os veículos do seu estoque.</p>
+        <a href="../carro/carro.php" class="btn">Cadastrar Carro</a>
+      </div>
+
+      <div class="card">
+        <i class="fas fa-cart-shopping"></i>
+        <h3>Registro de Vendas</h3>
+        <p>Registre e acompanhe todas as vendas realizadas.</p>
+        <a href="../vender/vender.php" class="btn">Registrar Venda</a>
+      </div>
+    </div>
+
+    <!-- Seção Dashboard com cards retangulares largos -->
+    <div class="dashboard">
+      <div class="card">
+        <div class="icon car">🚗</div>
+        <div class="content">
+          <div class="title">Total de Carros</div>
+          <div class="value">24</div>
+          <div class="footer green"><span class="arrow">↑ 3.5%</span> desde o último mês</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="icon money">💵</div>
+        <div class="content">
+          <div class="title">Vendas do Mês</div>
+          <div class="value">R$ 125.000</div>
+          <div class="footer green"><span class="arrow">↑ 12%</span> desde o último mês</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="icon user">👤</div>
+        <div class="content">
+          <div class="title">Funcionários</div>
+          <div class="value">8</div>
+          <div class="footer orange">— Sem alteração</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="icon stock">📈</div>
+        <div class="content">
+          <div class="title">Valor do Estoque</div>
+          <div class="value">R$ 1.2M</div>
+          <div class="footer green"><span class="arrow">↑ 8.2%</span> desde o último mês</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
